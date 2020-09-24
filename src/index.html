@@ -11,7 +11,7 @@
     </head>
     <body class="bg-gray-100">
         <!-- Navigation -->
-        <nav class="bg-white shadow fixed w-full z-10">
+        <nav class="bg-white shadow-lg fixed w-full z-10">
             <div class="max-w-6xl mx-auto px-2 sm:px-6 lg:px-8">
                 <div class="relative flex items-center justify-between h-16">
                     <div
@@ -40,23 +40,20 @@
                     >
                         <button
                             class="p-2 rounded-md hover:text-white hover:bg-gray-900 transition duration-150 ease-in-out"
+                            id="toggle-nav"
                         >
-                            <svg
-                                class="w-6 h-6"
-                                fill="none"
-                                stroke="currentColor"
-                                viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    stroke-width="2"
-                                    d="M4 6h16M4 12h16M4 18h16"
-                                ></path>
-                            </svg>
+                            <i data-feather="menu"></i>
                         </button>
                     </div>
+                </div>
+            </div>
+            <div class="hidden h-screen sm:hidden" id="mobile-nav">
+                <div class="px-2 pt-2 pb-3">
+                    <a
+                        href="./about.html"
+                        class="block px-3 py-2 mx-2 rounded-md font-medium leading-5 hover:bg-gray-900 hover:text-white transition duration-150 ease-in-out"
+                        >About</a
+                    >
                 </div>
             </div>
         </nav>
@@ -379,6 +376,18 @@
              * corresponding to the element's data-feather attribute value.
              */
             feather.replace();
+
+            // Toggle Nav
+            const navToggler = document.getElementById("toggle-nav");
+            const mobileNav = document.getElementById("mobile-nav");
+            navToggler.addEventListener("click", function () {
+                document.body.classList.toggle("overflow-hidden");
+                if (mobileNav.classList.contains("hidden")) {
+                    mobileNav.classList.replace("hidden", "block");
+                } else {
+                    mobileNav.classList.replace("block", "hidden");
+                }
+            });
         </script>
     </body>
 </html>

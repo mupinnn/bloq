@@ -11,7 +11,7 @@
     </head>
     <body>
         <!-- Navigation -->
-        <nav class="bg-white shadow">
+        <nav class="bg-white shadow fixed w-full z-10">
             <div class="max-w-6xl mx-auto px-2 sm:px-6 lg:px-8">
                 <div class="relative flex items-center justify-between h-16">
                     <div
@@ -61,5 +61,37 @@
             </div>
         </nav>
         <!-- End of Navigation -->
+
+        <header
+            class="h-screen py-10 flex items-center relative"
+            style="
+                background: url(https://source.unsplash.com/Kj2SaNHG-hg) center
+                    no-repeat;
+                background-size: cover;
+                background-attachment: scroll;
+            "
+        >
+            <div class="bg-gray-800 opacity-75 absolute w-full h-full"></div>
+            <!-- Hero section -->
+            <div class="max-w-6xl mx-0 px-6 relative md:mx-10 md:px-6 lg:mx-16">
+                <div class="text-left">
+                    <h2 class="font-extrabold text-white text-6xl">Untitled</h2>
+                    <p class="text-lg sm:text-xl text-white max-w-xl">
+                        Anim aute id magna aliqua ad ad non deserunt sunt. Qui
+                        irure qui lorem cupidatat commodo. Elit sunt amet fugiat
+                        veniam occaecat fugiat aliqua.
+                    </p>
+                    <div class="mt-8 flex justify-start">
+                        <a
+                            href="#"
+                            class="flex items-center justify-center leading-6 font-medium rounded-md text-indigo-700 bg-indigo-100 py-4 text-lg px-10"
+                        >
+                            Read More
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Hero section -->
+        </header>
     </body>
 </html>

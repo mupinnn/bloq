@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Bloq</title>
+    </head>
+    <body class="bg-gray-100">
+        <!-- Navigation -->
+        <nav class="bg-white shadow-lg sticky top-0 w-full z-10">
+            <div class="max-w-6xl mx-auto px-2 sm:px-6 lg:px-8">
+                <div class="relative flex items-center justify-between h-16">
+                    <div
+                        class="flex-1 flex items-center justify-center sm:justify-between"
+                    >
+                        <div class="flex-shrink-0 cursor-pointer">
+                            <a href="./index.html" class="text-2xl">Bloq</a>
+                        </div>
+                        <div class="hidden ml-auto w-auto sm:block">
+                            <div class="flex items-center justify-between">
+                                <a
+                                    href="./about.html"
+                                    class="px-3 py-2 mx-2 rounded-md font-medium leading-5 hover:bg-gray-900 hover:text-white transition duration-150 ease-in-out"
+                                    >About</a
+                                >
+                                <a
+                                    href="./contact.html"
+                                    class="px-3 py-2 mx-2 rounded-md font-medium leading-5 hover:bg-gray-900 hover:text-white transition duration-150 ease-in-out"
+                                    >Contact</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="absolute inset-y-0 right-0 flex items-center sm:hidden"
+                    >
+                        <button
+                            class="p-2 rounded-md hover:text-white hover:bg-gray-900 transition duration-150 ease-in-out"
+                            id="toggle-nav"
+                        >
+                            <i data-feather="menu"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden h-screen sm:hidden" id="mobile-nav">
+                <div class="px-2 pt-2 pb-3">
+                    <a
+                        href="./about.html"
+                        class="block px-3 py-2 mx-2 rounded-md font-medium leading-5 hover:bg-gray-900 hover:text-white transition duration-150 ease-in-out"
+                        >About</a
+                    >
+                    <a
+                        href="./about.html"
+                        class="block px-3 py-2 mx-2 rounded-md font-medium leading-5 hover:bg-gray-900 hover:text-white transition duration-150 ease-in-out"
+                        >Contact</a
+                    >
+                </div>
+            </div>
+        </nav>
+        <!-- End of Navigation -->
+
+        <!-- Main container -->
+        <main
+            class="container w-11/12 mx-auto py-10 flex flex-col md:w-10/12 lg:9/12"
+        >
+            <div class="grid grid-cols-5 gap-4 mb-5">
+                <div class="col-span-5 md:col-span-4">
+                    <form>
+                        <input
+                            type="email"
+                            name="search"
+                            id="search"
+                            class="w-full border-2 border-gray-400 outline-none rounded-md py-2 px-5 focus:shadow-outline"
+                            placeholder="Search . . ."
+                        />
+                    </form>
+                </div>
+                <div class="col-span-5 md:col-span-1">
+                    <div class="w-full h-full text-gray-500 relative">
+                        <select
+                            name="categories"
+                            id="options-menu"
+                            class="w-full h-full cursor-pointer inline-flex justify-between items-center outline-none rounded-md px-4 py-2 bg-white border-2 border-gray-400 focus:shadow-outline focus:outline-none"
+                        >
+                            <option value="all">All</option>
+                            <option value="react">ReactJS</option>
+                            <option value="node">NodeJS</option>
+                            <option value="vue">VueJS</option>
+                            <option value="js">JavaScript</option>
+                            <option value="tailwind">Tailwind CSS</option>
+                            <option value="sass">SASS/SCSS</option>
+                            <option value="snippets">Snippets</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="grid grid-cols-1 gap-4 mb-10 md:grid-cols-2 lg:grid-cols-3"
+            >
+                <div class="rounded shadow-lg bg-white cursor-pointer">
+                    <img
+                        class="w-full h-64 object-cover rounded"
+                        src="https://source.unsplash.com/lud4OaUCP4Q/600x600"
+                        alt="Sunset in the mountains"
+                    />
+                    <div class="px-6 py-4">
+                        <a
+                            href="./sample-post.html"
+                            class="block font-bold text-xl mb-2 hover:underline"
+                        >
+                            Build your own RESTful API with Express.js!
+                        </a>
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
+                        <span
+                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:underline"
+                            >#restfulapi</span
+                        >
+                        <span
+                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:underline"
+                            >#nodejs</span
+                        >
+                        <span
+                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:underline"
+                            >#expressjs</span
+                        >
+                    </div>
+                </div>
+                <div class="rounded shadow-lg bg-white cursor-pointer">
+                    <img
+                        class="w-full h-64 object-cover rounded"
+                        src="https://source.unsplash.com/lud4OaUCP4Q/600x600"
+                        alt="Sunset in the mountains"
+                    />
+                    <div class="px-6 py-4">
+                        <a
+                            href="./sample-post.html"
+                            class="block font-bold text-xl mb-2 hover:underline"
+                        >
+                            Build your own RESTful API with Express.js!
+                        </a>
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
+                        <span
+                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:underline"
+                            >#restfulapi</span
+                        >
+                        <span
+                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:underline"
+                            >#nodejs</span
+                        >
+                        <span
+                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:underline"
+                            >#expressjs</span
+                        >
+                    </div>
+                </div>
+                <div class="rounded shadow-lg bg-white cursor-pointer">
+                    <img
+                        class="w-full h-64 object-cover rounded"
+                        src="https://source.unsplash.com/lud4OaUCP4Q/600x600"
+                        alt="Sunset in the mountains"
+                    />
+                    <div class="px-6 py-4">
+                        <a
+                            href="./sample-post.html"
+                            class="block font-bold text-xl mb-2 hover:underline"
+                        >
+                            Build your own RESTful API with Express.js!
+                        </a>
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
+                        <span
+                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:underline"
+                            >#restfulapi</span
+                        >
+                        <span
+                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:underline"
+                            >#nodejs</span
+                        >
+                        <span
+                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:underline"
+                            >#expressjs</span
+                        >
+                    </div>
+                </div>
+                <div class="rounded shadow-lg bg-white cursor-pointer">
+                    <img
+                        class="w-full h-64 object-cover rounded"
+                        src="https://source.unsplash.com/lud4OaUCP4Q/600x600"
+                        alt="Sunset in the mountains"
+                    />
+                    <div class="px-6 py-4">
+                        <a
+                            href="./sample-post.html"
+                            class="block font-bold text-xl mb-2 hover:underline"
+                        >
+                            Build your own RESTful API with Express.js!
+                        </a>
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
+                        <span
+                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:underline"
+                            >#restfulapi</span
+                        >
+                        <span
+                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:underline"
+                            >#nodejs</span
+                        >
+                        <span
+                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:underline"
+                            >#expressjs</span
+                        >
+                    </div>
+                </div>
+                <div class="rounded shadow-lg bg-white cursor-pointer">
+                    <img
+                        class="w-full h-64 object-cover rounded"
+                        src="https://source.unsplash.com/lud4OaUCP4Q/600x600"
+                        alt="Sunset in the mountains"
+                    />
+                    <div class="px-6 py-4">
+                        <a
+                            href="./sample-post.html"
+                            class="block font-bold text-xl mb-2 hover:underline"
+                        >
+                            Build your own RESTful API with Express.js!
+                        </a>
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
+                        <span
+                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:underline"
+                            >#restfulapi</span
+                        >
+                        <span
+                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:underline"
+                            >#nodejs</span
+                        >
+                        <span
+                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:underline"
+                            >#expressjs</span
+                        >
+                    </div>
+                </div>
+                <div class="rounded shadow-lg bg-white cursor-pointer">
+                    <img
+                        class="w-full h-64 object-cover rounded"
+                        src="https://source.unsplash.com/lud4OaUCP4Q/600x600"
+                        alt="Sunset in the mountains"
+                    />
+                    <div class="px-6 py-4">
+                        <a
+                            href="./sample-post.html"
+                            class="block font-bold text-xl mb-2 hover:underline"
+                        >
+                            Build your own RESTful API with Express.js!
+                        </a>
+                    </div>
+                    <div class="px-6 pt-4 pb-2">
+                        <span
+                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:underline"
+                            >#restfulapi</span
+                        >
+                        <span
+                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:underline"
+                            >#nodejs</span
+                        >
+                        <span
+                            class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 hover:underline"
+                            >#expressjs</span
+                        >
+                    </div>
+                </div>
+            </div>
+            <div class="w-full flex justify-center items-center">
+                <ul class="flex">
+                    <li
+                        class="cursor-pointer rounded bg-white border border-gray-700 mx-1 hover:bg-indigo-700 hover:text-white"
+                    >
+                        <a
+                            class="w-8 h-8 flex justify-center items-center text-center"
+                            href="#"
+                            >&laquo;</a
+                        >
+                    </li>
+                    <li
+                        class="cursor-pointer rounded bg-white border border-gray-700 mx-1 hover:bg-indigo-700 hover:text-white"
+                    >
+                        <a
+                            class="w-8 h-8 flex justify-center items-center text-center"
+                            href="#"
+                            >1</a
+                        >
+                    </li>
+                    <li
+                        class="cursor-pointer rounded bg-white border border-gray-700 mx-1 hover:bg-indigo-700 hover:text-white"
+                    >
+                        <a
+                            class="w-8 h-8 flex justify-center items-center text-center"
+                            href="#"
+                            >2</a
+                        >
+                    </li>
+                    <li
+                        class="cursor-pointer rounded bg-white border border-gray-700 mx-1 hover:bg-indigo-700 hover:text-white"
+                    >
+                        <a
+                            class="w-8 h-8 flex justify-center items-center text-center"
+                            href="#"
+                            >...</a
+                        >
+                    </li>
+                    <li
+                        class="cursor-pointer rounded bg-white border border-gray-700 mx-1 hover:bg-indigo-700 hover:text-white"
+                    >
+                        <a
+                            class="w-8 h-8 flex justify-center items-center text-center"
+                            href="#"
+                            >9</a
+                        >
+                    </li>
+                    <li
+                        class="cursor-pointer rounded bg-white border border-gray-700 mx-1 hover:bg-indigo-700 hover:text-white"
+                    >
+                        <a
+                            class="w-8 h-8 flex justify-center items-center text-center"
+                            href="#"
+                            >10</a
+                        >
+                    </li>
+                    <li
+                        class="cursor-pointer rounded bg-white border border-gray-700 mx-1 hover:bg-indigo-700 hover:text-white"
+                    >
+                        <a
+                            class="w-8 h-8 flex justify-center items-center text-center"
+                            href="#"
+                            >&raquo;</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </main>
+        <!-- End of Main container -->
+
+        <!-- Contact section -->
+        <section
+            class="h-40 bg-indigo-700 p-5 flex flex-col justify-center items-center lg:h-64"
+        >
+            <h3
+                class="text-2xl text-white text-center font-bold mb-5 lg:text-4xl"
+            >
+                Subscribe My News Feed!
+            </h3>
+            <div class="w-full flex justify-center md:w-3/4 lg:w-1/2">
+                <input
+                    type="email"
+                    name="subs"
+                    id="subs"
+                    class="w-3/4 outline-none rounded py-2 px-5"
+                    placeholder="Your email@email.com"
+                />
+                <button
+                    type="submit"
+                    class="w-1/6 ml-2 p-2 rounded bg-white font-medium focus:outline-none hover:bg-gray-400 lg:text-lg"
+                >
+                    Subs!
+                </button>
+            </div>
+        </section>
+        <!-- End of Contact section -->
+
+        <!-- Footer -->
+        <footer class="h-20 py-2 px-5 sm:h-16">
+            <div
+                class="flex flex-col justify-between items-center h-full w-full sm:flex-row"
+            >
+                <div class="flex items-center justify-center my-3 sm:m-0">
+                    <a
+                        href="https://github.com/mupinnn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i data-feather="github" class="mx-2 cursor-pointer"></i
+                    ></a>
+                    <a
+                        href="https://facebook.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i
+                            data-feather="facebook"
+                            class="mx-2 cursor-pointer"
+                        ></i
+                    ></a>
+                    <a
+                        href="https://instagram.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i
+                            data-feather="instagram"
+                            class="mx-2 cursor-pointer"
+                        ></i
+                    ></a>
+                    <a
+                        href="https://twitter.com/tailwindcss"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i
+                            data-feather="twitter"
+                            class="mx-2 cursor-pointer"
+                        ></i
+                    ></a>
+                </div>
+                <p
+                    class="flex justify-center items-center text-center mb-3 sm:m-0"
+                >
+                    Made with
+                    <i
+                        data-feather="heart"
+                        class="inline-block mx-2 w-5 text-red-700"
+                    ></i>
+                    by &nbsp;
+                    <a
+                        href="https://github.com/mupinnn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="underline"
+                    >
+                        @mupinnn
+                    </a>
+                </p>
+            </div>
+        </footer>
+        <!-- End of Footer -->
+
+        <script src="https://unpkg.com/feather-icons"></script>
+        <script>
+            /**
+             * Replaces all elements that have a data-feather attribute with SVG markup
+             * corresponding to the element's data-feather attribute value.
+             */
+            feather.replace();
+
+            // Toggle Nav
+            const toggleNav = document.getElementById("toggle-nav");
+            const mobileNav = document.getElementById("mobile-nav");
+            toggleNav.addEventListener("click", function () {
+                document.body.classList.toggle("overflow-hidden");
+                if (mobileNav.classList.contains("hidden")) {
+                    mobileNav.classList.replace("hidden", "block");
+                } else {
+                    mobileNav.classList.replace("block", "hidden");
+                }
+            });
+        </script>
+    </body>
+</html>

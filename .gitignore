@@ -1,2 +1,20 @@
-node_modules
+# Files
 *-error.log
+
+# Folders
+/node_modules/
+
+# OS or Editor folders
+._*
+.cache
+.DS_Store
+.idea
+.vscode
+.project
+.settings
+.tmproj
+*.esproj
+*.sublime-project
+*.sublime-workspace
+nbproject
+Thumbs.db

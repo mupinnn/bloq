@@ -1,8 +1,14 @@
 # Files
 *-error.log
+*.zip
+*.rar
+*.tar
+*.tar.gz
+*.gz
 
 # Folders
 /node_modules/
+/releases/
 
 # OS or Editor folders
 ._*

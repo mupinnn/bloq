@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Bloq</title>
+    </head>
+    <body class="bg-gray-100">
+        <!-- Navigation -->
+        <nav class="bg-white shadow-lg sticky top-0 w-full z-10">
+            <div class="max-w-6xl mx-auto px-2 sm:px-6 lg:px-8">
+                <div class="relative flex items-center justify-between h-16">
+                    <div
+                        class="flex-1 flex items-center justify-center sm:justify-between"
+                    >
+                        <div class="flex-shrink-0 cursor-pointer">
+                            <a href="./index.html" class="text-2xl">Bloq</a>
+                        </div>
+                        <div class="hidden ml-auto w-auto sm:block">
+                            <div class="flex items-center justify-between">
+                                <a
+                                    href="./posts.html"
+                                    class="px-3 py-2 mx-2 rounded-md font-medium leading-5 hover:bg-gray-900 hover:text-white transition duration-150 ease-in-out"
+                                    >Post</a
+                                >
+                                <a
+                                    href="./about.html"
+                                    class="px-3 py-2 mx-2 rounded-md font-medium leading-5 hover:bg-gray-900 hover:text-white transition duration-150 ease-in-out"
+                                    >About</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="absolute inset-y-0 right-0 flex items-center sm:hidden"
+                    >
+                        <button
+                            class="p-2 rounded-md hover:text-white hover:bg-gray-900 transition duration-150 ease-in-out"
+                            id="toggle-nav"
+                        >
+                            <i data-feather="menu"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden h-screen sm:hidden" id="mobile-nav">
+                <div class="px-2 pt-2 pb-3">
+                    <a
+                        href="./posts.html"
+                        class="block px-3 py-2 mx-2 rounded-md font-medium leading-5 hover:bg-gray-900 hover:text-white transition duration-150 ease-in-out"
+                        >Post</a
+                    >
+                    <a
+                        href="./about.html"
+                        class="block px-3 py-2 mx-2 rounded-md font-medium leading-5 hover:bg-gray-900 hover:text-white transition duration-150 ease-in-out"
+                        >About</a
+                    >
+                </div>
+            </div>
+        </nav>
+        <!-- End of Navigation -->
+
+        <!-- Main container -->
+        <main
+            class="container w-11/12 mx-auto py-10 flex flex-col items-center md:w-8/12 lg:9/12"
+        >
+            <div
+                class="bg-white border border-gray-400 rounded py-5 px-5 md:px-10"
+            >
+                <header class="flex justify-center mb-10">
+                    <img
+                        src="./img/my-avataaars.png"
+                        alt="me"
+                        class="h-48 w-48 mb-5"
+                    />
+                </header>
+                <section class="text-justify text-gray-900 leading-relaxed">
+                    <p class="mb-5">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Est itaque quia, pariatur aspernatur in, dolorum
+                        ullam nobis eveniet atque corrupti veniam necessitatibus
+                        asperiores velit adipisci dolor exercitationem officiis
+                        unde odio eaque provident iste. Minus veniam incidunt
+                        necessitatibus quia temporibus voluptatem!
+                    </p>
+                    <p class="mb-5">
+                        Dolores optio sed quasi quaerat praesentium minima rerum
+                        libero voluptates, culpa nam, dolor obcaecati harum non
+                        quos commodi nisi id quibusdam accusantium eum
+                        consectetur suscipit hic. Recusandae molestiae dolor
+                        quos dicta. Non blanditiis commodi, iure repellendus
+                        fuga provident soluta harum excepturi nemo nostrum enim
+                        nesciunt id accusamus natus deserunt nulla.
+                    </p>
+                    <p class="mb-5">
+                        Asperiores repellat dolor cum ratione nihil sint nisi
+                        iusto, voluptatum molestias nobis voluptas itaque
+                        reprehenderit illum alias laboriosam!
+                    </p>
+                </section>
+            </div>
+        </main>
+        <!-- End of Main container -->
+
+        <!-- Contact section -->
+        <section
+            class="h-40 bg-indigo-700 p-5 flex flex-col justify-center items-center lg:h-64"
+        >
+            <h3
+                class="text-2xl text-white text-center font-bold mb-5 lg:text-4xl"
+            >
+                Subscribe My News Feed!
+            </h3>
+            <div class="w-full flex justify-center md:w-3/4 lg:w-1/2">
+                <input
+                    type="email"
+                    name="subs"
+                    id="subs"
+                    class="w-3/4 outline-none rounded py-2 px-5"
+                    placeholder="Your email@email.com"
+                />
+                <button
+                    type="submit"
+                    class="w-1/6 ml-2 p-2 rounded bg-white font-medium focus:outline-none hover:bg-gray-400 lg:text-lg"
+                >
+                    Subs!
+                </button>
+            </div>
+        </section>
+        <!-- End of Contact section -->
+
+        <!-- Footer -->
+        <footer class="h-20 py-2 px-5 sm:h-16">
+            <div
+                class="flex flex-col justify-between items-center h-full w-full sm:flex-row"
+            >
+                <div class="flex items-center justify-center my-3 sm:m-0">
+                    <a
+                        href="https://github.com/mupinnn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i data-feather="github" class="mx-2 cursor-pointer"></i
+                    ></a>
+                    <a
+                        href="https://facebook.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i
+                            data-feather="facebook"
+                            class="mx-2 cursor-pointer"
+                        ></i
+                    ></a>
+                    <a
+                        href="https://instagram.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i
+                            data-feather="instagram"
+                            class="mx-2 cursor-pointer"
+                        ></i
+                    ></a>
+                    <a
+                        href="https://twitter.com/tailwindcss"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i
+                            data-feather="twitter"
+                            class="mx-2 cursor-pointer"
+                        ></i
+                    ></a>
+                </div>
+                <p
+                    class="flex justify-center items-center text-center mb-3 sm:m-0"
+                >
+                    Made with
+                    <i
+                        data-feather="heart"
+                        class="inline-block mx-2 w-5 text-red-700"
+                    ></i>
+                    by &nbsp;
+                    <a
+                        href="https://github.com/mupinnn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="underline"
+                    >
+                        @mupinnn
+                    </a>
+                </p>
+            </div>
+        </footer>
+        <!-- End of Footer -->
+
+        <script src="https://unpkg.com/feather-icons"></script>
+        <script>
+            /**
+             * Replaces all elements that have a data-feather attribute with SVG markup
+             * corresponding to the element's data-feather attribute value.
+             */
+            feather.replace();
+
+            // Toggle Nav
+            const toggleNav = document.getElementById("toggle-nav");
+            const mobileNav = document.getElementById("mobile-nav");
+            toggleNav.addEventListener("click", function () {
+                document.body.classList.toggle("overflow-hidden");
+                if (mobileNav.classList.contains("hidden")) {
+                    mobileNav.classList.replace("hidden", "block");
+                } else {
+                    mobileNav.classList.replace("block", "hidden");
+                }
+            });
+        </script>
+    </body>
+</html>

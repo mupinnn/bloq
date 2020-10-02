@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Bloq</title>
+    </head>
+    <body class="bg-gray-100">
+        <!-- Navigation -->
+        <nav class="bg-white shadow-lg sticky top-0 w-full z-10">
+            <div class="max-w-6xl mx-auto px-2 sm:px-6 lg:px-8">
+                <div class="relative flex items-center justify-between h-16">
+                    <div
+                        class="flex-1 flex items-center justify-center sm:justify-between"
+                    >
+                        <div class="flex-shrink-0 cursor-pointer">
+                            <a href="./index.html" class="text-2xl">Bloq</a>
+                        </div>
+                        <div class="hidden ml-auto w-auto sm:block">
+                            <div class="flex items-center justify-between">
+                                <a
+                                    href="./posts.html"
+                                    class="px-3 py-2 mx-2 rounded-md font-medium leading-5 hover:bg-gray-900 hover:text-white transition duration-150 ease-in-out"
+                                    >Post</a
+                                >
+                                <a
+                                    href="./about.html"
+                                    class="px-3 py-2 mx-2 rounded-md font-medium leading-5 hover:bg-gray-900 hover:text-white transition duration-150 ease-in-out"
+                                    >About</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="absolute inset-y-0 right-0 flex items-center sm:hidden"
+                    >
+                        <button
+                            class="p-2 rounded-md hover:text-white hover:bg-gray-900 transition duration-150 ease-in-out"
+                            id="toggle-nav"
+                        >
+                            <i data-feather="menu"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="hidden h-screen sm:hidden" id="mobile-nav">
+                <div class="px-2 pt-2 pb-3">
+                    <a
+                        href="./posts.html"
+                        class="block px-3 py-2 mx-2 rounded-md font-medium leading-5 hover:bg-gray-900 hover:text-white transition duration-150 ease-in-out"
+                        >Post</a
+                    >
+                    <a
+                        href="./about.html"
+                        class="block px-3 py-2 mx-2 rounded-md font-medium leading-5 hover:bg-gray-900 hover:text-white transition duration-150 ease-in-out"
+                        >About</a
+                    >
+                </div>
+            </div>
+        </nav>
+        <!-- End of Navigation -->
+
+        <!-- Main container -->
+        <main
+            class="w-11/12 mx-auto py-10 grid grid-cols-1 gap-4 lg:grid-cols-12"
+        >
+            <div id="left" class="col-span-1 lg:col-span-8">
+                <div class="bg-white border border-gray-400 rounded p-5 mb-3">
+                    <header id="post-header">
+                        <p class="text-sm text-gray-600 italic mb-1">
+                            Authored by
+                            <a
+                                href="https://github.com/mupinnn"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                class="hover:underline"
+                            >
+                                mupinnn
+                            </a>
+                            on September 22, 2020
+                        </p>
+                        <h3 class="text-4xl font-medium mb-3">
+                            Build your own RESTful API with Express.js!
+                        </h3>
+                        <div class="flex flex-wrap mb-3">
+                            <span
+                                class="mr-2 mb-2 inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 hover:underline"
+                                >#restfulapi</span
+                            >
+                            <span
+                                class="mr-2 mb-2 inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 hover:underline"
+                                >#nodejs</span
+                            >
+                            <span
+                                class="mr-2 mb-2 nline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 hover:underline"
+                                >#expressjs</span
+                            >
+                        </div>
+                        <img
+                            src="./img/thumbnail.jpeg"
+                            alt="thumbnail"
+                            class="max-w-full h-auto rounded"
+                        />
+                    </header>
+                    <hr class="my-5" />
+                    <section id="post-content">
+                        <p class="mb-5">
+                            This is a quick and simple blog content because I
+                            don't want to use lorem ipsum placeholder for this.
+                            So, I will make it very quick.
+                        </p>
+                        <p class="mb-5">
+                            <b>What is Express.js?</b> Express is a minimal and
+                            flexible Node.js web application framework that
+                            provides a robust set of features for web and mobile
+                            applications. With a myriad of HTTP utility methods
+                            and middleware at your disposal, creating a robust
+                            API is quick and easy.
+                        </p>
+                        <h6 class="text-3xl font-medium mb-5">Installation</h6>
+                        <p class="mb-5">
+                            Create a new folder, named it whatever you want, and
+                            run
+                            <code class="bg-black rounded text-yellow-400 px-2"
+                                >npm init -y</code
+                            >. After initializing process done, open the
+                            directory with your favorite code editor/IDE.
+                        </p>
+                        <p class="mb-5">
+                            Next, install <i>express</i> dependencies with
+                            <code class="bg-black rounded text-yellow-400 px-2"
+                                >npm i express</code
+                            >. After it done, create
+                            <code class="bg-black rounded text-yellow-400 px-2"
+                                >app.js</code
+                            >
+                            on root of directory.
+                        </p>
+                        <img
+                            src="./img/folder-structure.png"
+                            alt="folder"
+                            class="max-w-full h-auto mx-auto mb-5"
+                        />
+                        <h6 class="text-3xl font-medium mb-5">
+                            Getting it done
+                        </h6>
+                        <p class="mb-5">
+                            Then, write this in
+                            <code class="bg-black rounded text-yellow-400 px-2"
+                                >app.js</code
+                            >
+                        </p>
+                        <img
+                            src="./img/simple-express-api-snippets.png"
+                            alt="folder"
+                            class="max-w-full h-auto mx-auto mb-5"
+                        />
+                        <p class="mb-5">
+                            Run
+                            <code class="bg-black rounded text-yellow-400 px-2"
+                                >node app.js</code
+                            >
+                            in your terminal. Don't forget to point the project
+                            directory first before run that command. Open your
+                            browser and visit
+                            <code class="bg-black rounded text-yellow-400 px-2"
+                                >http://localhost:9000</code
+                            >, and <i>voila!</i> you will see
+                            <b>Hello world!</b> showing.
+                        </p>
+                        <p>
+                            Sorry for this bad content placeholder, I'm a bit
+                            lazy to write a proper content :|
+                        </p>
+                    </section>
+                </div>
+            </div>
+            <div id="right" class="col-span-1 lg:col-span-4">
+                <div
+                    class="bg-white border border-gray-400 rounded py-3 px-5 mb-3"
+                >
+                    <h4 class="text-xl">Recent Articles</h4>
+                    <hr class="my-3" />
+                    <ul>
+                        <li>
+                            <a href="./sample-post.html" class="flex mb-3">
+                                <img
+                                    src="./img/js-logo.png"
+                                    alt="thumbnail-mini"
+                                    class="h-12 w-12 mr-3"
+                                />
+                                <div class="flex-1">
+                                    <h5 class="text-md hover:underline">
+                                        Array in JavaScript and how to work with
+                                        it
+                                    </h5>
+                                    <p class="text-sm text-gray-600">
+                                        Sep 22, 2020
+                                    </p>
+                                </div></a
+                            >
+                        </li>
+                        <li>
+                            <a href="./sample-post.html" class="flex mb-3">
+                                <img
+                                    src="./img/js-logo.png"
+                                    alt="thumbnail-mini"
+                                    class="h-12 w-12 mr-3"
+                                />
+                                <div class="flex-1">
+                                    <h5 class="text-md hover:underline">
+                                        Array in JavaScript and how to work with
+                                        it
+                                    </h5>
+                                    <p class="text-sm text-gray-600">
+                                        Sep 22, 2020
+                                    </p>
+                                </div></a
+                            >
+                        </li>
+                        <li>
+                            <a href="./sample-post.html" class="flex mb-3">
+                                <img
+                                    src="./img/js-logo.png"
+                                    alt="thumbnail-mini"
+                                    class="h-12 w-12 mr-3"
+                                />
+                                <div class="flex-1">
+                                    <h5 class="text-md hover:underline">
+                                        Array in JavaScript and how to work with
+                                        it
+                                    </h5>
+                                    <p class="text-sm text-gray-600">
+                                        Sep 22, 2020
+                                    </p>
+                                </div></a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+        <!-- End of Main container -->
+
+        <!-- Contact section -->
+        <section
+            class="h-40 bg-indigo-700 p-5 flex flex-col justify-center items-center lg:h-64"
+        >
+            <h3
+                class="text-2xl text-white text-center font-bold mb-5 lg:text-4xl"
+            >
+                Subscribe My News Feed!
+            </h3>
+            <div class="w-full flex justify-center md:w-3/4 lg:w-1/2">
+                <input
+                    type="email"
+                    name="subs"
+                    id="subs"
+                    class="w-3/4 outline-none rounded py-2 px-5"
+                    placeholder="Your email@email.com"
+                />
+                <button
+                    type="submit"
+                    class="w-1/6 ml-2 p-2 rounded bg-white font-medium focus:outline-none hover:bg-gray-400 lg:text-lg"
+                >
+                    Subs!
+                </button>
+            </div>
+        </section>
+        <!-- End of Contact section -->
+
+        <!-- Footer -->
+        <footer class="h-20 py-2 px-5 sm:h-16">
+            <div
+                class="flex flex-col justify-between items-center h-full w-full sm:flex-row"
+            >
+                <div class="flex items-center justify-center my-3 sm:m-0">
+                    <a
+                        href="https://github.com/mupinnn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i data-feather="github" class="mx-2 cursor-pointer"></i
+                    ></a>
+                    <a
+                        href="https://facebook.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i
+                            data-feather="facebook"
+                            class="mx-2 cursor-pointer"
+                        ></i
+                    ></a>
+                    <a
+                        href="https://instagram.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i
+                            data-feather="instagram"
+                            class="mx-2 cursor-pointer"
+                        ></i
+                    ></a>
+                    <a
+                        href="https://twitter.com/tailwindcss"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <i
+                            data-feather="twitter"
+                            class="mx-2 cursor-pointer"
+                        ></i
+                    ></a>
+                </div>
+                <p
+                    class="flex justify-center items-center text-center mb-3 sm:m-0"
+                >
+                    Made with
+                    <i
+                        data-feather="heart"
+                        class="inline-block mx-2 w-5 text-red-700"
+                    ></i>
+                    by &nbsp;
+                    <a
+                        href="https://github.com/mupinnn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="underline"
+                    >
+                        @mupinnn
+                    </a>
+                </p>
+            </div>
+        </footer>
+        <!-- End of Footer -->
+
+        <script src="https://unpkg.com/feather-icons"></script>
+        <script>
+            /**
+             * Replaces all elements that have a data-feather attribute with SVG markup
+             * corresponding to the element's data-feather attribute value.
+             */
+            feather.replace();
+
+            // Toggle Nav
+            const toggleNav = document.getElementById("toggle-nav");
+            const mobileNav = document.getElementById("mobile-nav");
+            toggleNav.addEventListener("click", function () {
+                document.body.classList.toggle("overflow-hidden");
+                if (mobileNav.classList.contains("hidden")) {
+                    mobileNav.classList.replace("hidden", "block");
+                } else {
+                    mobileNav.classList.replace("block", "hidden");
+                }
+            });
+        </script>
+    </body>
+</html>

@@ -10,7 +10,7 @@ Bloq is a minimalist, responsive blog template for [Tailwind CSS](https://tailwi
 
 ## Download and Installation
 
-**_IMPORTANT NOTE_** If you want to use this template as it is in the preview (production ready), **please don't edit or adding more utility classes to elements** because I'm afraid that utility class you're added not included in the production build, so please only do changes to text content.
+**_IMPORTANT NOTE_** : If you want to use this template as it is in the preview (production ready), **please don't edit or adding more utility classes to elements** because I'm afraid that utility class you're added not included in the production build, so please only do changes to text content.
 
 ### Usage without customizing anything
 
